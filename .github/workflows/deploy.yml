@@ -56,6 +56,6 @@ jobs:
     - name: Security scan with Trivy
       uses: aquasecurity/trivy-action@master
       with:
-      image-ref: ${{ env.IMAGE_NAME }}:${{ github.sha }}
-      severity: HIGH,CRITICAL
-      scan-type: image
+        image-ref: ${{ env.IMAGE_NAME }}:${{ github.sha }}
+        severity: HIGH,CRITICAL
+        scan-type: image
